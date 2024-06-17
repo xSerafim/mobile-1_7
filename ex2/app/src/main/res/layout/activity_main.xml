@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Coeficiente a"
+        android:inputType="numberSigned|numberDecimal" />
+
+    <EditText
+        android:id="@+id/editTextB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Coeficiente b"
+        android:inputType="numberSigned|numberDecimal" />
+
+    <EditText
+        android:id="@+id/editTextC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Coeficiente c"
+        android:inputType="numberSigned|numberDecimal" />
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calcular" />
+
+    <TextView
+        android:id="@+id/textViewDelta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delta: " />
+
+    <TextView
+        android:id="@+id/textViewX1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="X1: " />
+
+    <TextView
+        android:id="@+id/textViewX2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="X2: " />
+
+    <TextView
+        android:id="@+id/textViewMensagem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="" />
+
+</LinearLayout>

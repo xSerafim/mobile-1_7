@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tipo de Professor:" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupTipoProfessor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioButtonTitular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Titular" />
+
+        <RadioButton
+            android:id="@+id/radioButtonHorista"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Horista" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/editTextNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nome" />
+
+    <EditText
+        android:id="@+id/editTextMatricula"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Matrícula"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editTextIdade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Idade"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editTextAnoInstituicao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ano de Instituição (Titular)"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editTextSalarioBase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Salário Base (Titular)"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/editTextHorasAula"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Horas de Aula (Horista)"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editTextValorHoraAula"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Valor por Hora (Horista)"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calcular Salário" />
+
+    <TextView
+        android:id="@+id/textViewResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp" />
+
+</LinearLayout>

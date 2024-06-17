@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tipo de Conta:" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupTipoConta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioButtonPoupanca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Poupança" />
+
+        <RadioButton
+            android:id="@+id/radioButtonEspecial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Especial" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/editTextValorOperacao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Valor (Saque/Depósito)"
+        android:inputType="numberDecimal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnSacar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Sacar" />
+
+        <Button
+            android:id="@+id/btnDepositar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Depositar" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnCalcularRendimento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calcular Rendimento (Poupança)" />
+
+    <Button
+        android:id="@+id/btnMostrarDados"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mostrar Dados" />
+
+    <TextView
+        android:id="@+id/textViewResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp" />
+
+</LinearLayout>
